@@ -36,3 +36,16 @@ a:hover {
     background-color: rgba(0,0,0, .6); /*настройка прозрачности только фона subheader, а не всего subheader */
     
 }
+.subheader .subheader_logo{
+    display:block;
+    margin-top: 16px;
+    max-width: 100%;
+}
+.subheader .subheader_official {
+    margin-top: 6px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
