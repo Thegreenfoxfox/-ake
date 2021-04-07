@@ -166,5 +166,36 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
 }
+.reason .reason_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
 
+.reason .reason_block .reason_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
 
+.reason .reason_block .reason_descr {
+    width: 343px;
+}
+.reason .reason_block .reason_descr .reason_subtitle{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+.reason .reason_block .reason_descr .reason_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
