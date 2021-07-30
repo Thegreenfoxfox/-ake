@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+    <title>Главная страница</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            min-width: 350px;
+        }
+        body{
+            margin: 0;
+        }
+        .container_top {
+            background-image: url(images/bacground_desktop.jpg); 
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-size: cover;
+            width: 100%;
+            height: 702px;
+        }
+        .container_middle {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            text-align: -webkit-center;
+        }
+        .container_bottom {
+            height: 190px;
+            width: 100%;
+        }
+        .block_top {
+            margin-left: 10%;
+            width: 30%;
+            height: 100%;
+            padding-top: 10%;
+        }
+        
+        .block_text_top_date {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 80px;
+            align-items: center;
+            color: #FFFFFF;
+            margin-bottom: 35px;
+
+        }
+        
+        .block_text_top_title {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 70px;
+            line-height: 60px;
+            letter-spacing: -0.05em;
+            color: #FFFFFF;
+            margin-bottom: 35px;
+        }
+
+        .block_text_top_desc {
+            font-family: Arial;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #E0C1EB;
+            margin-bottom: 35px;
+        }
+        .block_text_top_warning {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #E1AFF2;
+        }
+        
+        .form_block{
+            max-width: 724px;
+            margin-top: 50px;
+            font-family: "Times New Roman";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .form_info {
+            width: 100%;
+            max-width: 720px;
+            margin-top: 47px;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #808080;
+        }
+        .input_name {
+            width: 100%;
+            height: 50px;
+            display: block;
+            color: #000;
+            background: #FFFFFF;
+            border: 1px solid #9B58C1;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+            border-radius: 5px;
+            margin-top: 15px;
+            padding-left: 38px;
+        }
+        .input_phone {
+            width: 100%;
+            height: 50px;
+            display: block;
+            color: #000;
+            background: #FFFFFF;
+            border: 1px solid #9B58C1;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+            border-radius: 5px;
+            margin-top: 15px;
+            padding-left: 38px;
+        }
+        .input_mail {
+            width: 100%;
+            height: 50px;
+            display: block;
+            color: #000;
+            background: #FFFFFF;
+            border: 1px solid #9B58C1;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 20px rgba(155, 88, 193, 0.4);
+            border-radius: 5px;
+            margin-top: 15px;
+            padding-left: 38px;
+        }
+        .button {
+            background: #F81155;
+            border-radius: 20px;
+            width: 300px;
+            margin-top: 50px;
+            padding: 21px;
+            
+        }
+        .button_text {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #FFFFFF;
+        }
+        .block_warning {
+            max-width: 730px;
+            background: #A32CE8;
+            height: 260px;
+            margin-top: 132px;
+            text-align: left;
+        }
+        .img_icon {
+            position: relative;
+            margin-top: -40px;
+            margin-left: 46%;
+        }
+        .block_warning_text {
+            color: #F9EDFD;
+            margin: 0 50px 0 50px;
+            font-family: Arial;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        @media screen and  (max-width:1280px) {
+            .container_top {
+                background-image:url(images/bacground_mobile.jpg);
+            }
+            .block_text_top_date{
+                font-family: Arial;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 80px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+                
+            }
+            .block_text_top_title {
+                align-items: center;
+                font-family: SF Pro Text;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 40px;
+                letter-spacing: -0.05em;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+                width: 100%;
+        }
+        .block_top {
+            width: 90%;
+        }
+        .block_text_top_warning {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #E1AFF2;
+            margin-bottom: 18px;
+            margin-top: 370px;
+        }
+        }
+    
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div class="container_top">
+        <div class="block_top">
+            <div class="block_text_top_date">
+                2–12 июля 2021
+            </div>
+            <div class="block_text_top_title">
+                Сертификат за регистрацию!
+            </div>
+            <div class="block_text_top_desc">
+                <b style="font-weight: bold">Получать подарки всегда приятно, когда Вам дарят их просто так!</b> Поэтому просто оставьте свои контакты и участвуйте* в розыгрыше сертификата Озон.
+            </div>
+            <div class="block_text_top_warning">*Итоги розыгрыша 14.07.21</div>
+        </div>
+    </div>
+    <div class="container_middle">
+        <div class="form_block">
+            <div><input type="text"  class="input_name" placeholder="Имя" value=""></div>
+            <div><input type="tel"  class="input_phone" placeholder="Телефон" value=""></div>
+            <div><input type="email"  class="input_mail" placeholder="E-mail" value=""></div>
+        </div>
+        <div class="form_info">Все поля обязательны для заполнения. Нажимая кнопку «Участвовать», Вы подтверждаете, что даете согласие на обработку персональных данных и на получение рекламной информации, отправляемой на указанный Вами номер телефона и e-mail.</div>
+        <div class="button">
+            <div class="button_text">Участвовать</div>
+        </div>
+        <div class="block_warning">
+            <div><img class="img_icon" src="images/icon.svg" width="72" height="72" alt="image description"></div>
+            <div class="block_warning_text"><b class="title">Условия розыгрыша:</b><br>
+                Предложение действует со 2 по 12.07.2021 года только для физических лиц. Призовой фонд: 10 сертификатов номиналом 3500 рублей на Озон. 1 победитель = 1 сертификат.
+                Для участия необходимо заполнить все поля в форме регистрации. Итоги розыгрыша будут подведены 14 июля 2021г.<br><br><br>
+                Компания «Тион» оставляет за собой право прекратить действие акции в любой момент.
+            </div>
+        </div>
+        <div class="container_bottom"></div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
